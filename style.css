@@ -11,6 +11,7 @@
 
   html{
       scroll-behavior: smooth;
+      font-size: 16px;
   } 
 
   body{
@@ -21,20 +22,22 @@
   nav{
       font-family: 'Poppins', sans-serif;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       /* height: 5vh; */
       /* background-color: #e8d6cb; */
       /* position: fixed; */
       width: 100%;
       padding-top: 10px;
-      
   }
 
+  /* .navbar{
+    display: ;
+  } */
+
   .nav-menu{
-    
       display: flex;
       list-style: none;
-      width: 40%;
+      /* width: 40%; */
       justify-content: space-evenly;
       align-items: center;
   }
@@ -52,31 +55,43 @@
   h1 {
       font-family: 'Poppins', sans-serif;
   }
-  h2 {
-    font-family: 'Poppins', sans-serif;
-  }
+
   p{
       font-family: 'Poppins', sans-serif;
-      font-size: 30px;
-      color:#98c1d9;
+      font-size: 2rem;
+      color:#e8d6cb;
   }
   p1{
     font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
     color:#e8d6cb;
   }
   p2{
     font-family: 'Poppins', sans-serif;
     color:#e8d6cb;
   }
+  p3{
+    font-family: 'Poppins', sans-serif;
+    color:#e8d6cb;
+    font-size: 2rem;
+  }
   span{
     font-family: 'Poppins', sans-serif;
     color:#e8d6cb;
   }
+  span2{
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size: 1.5rem;
+  }
   .titre{
       color:#e8d6cb;
-      font-size: 60px
+      font-size: 5rem;
   }
-
+  
+  .page3left ul{
+    list-style: none;
+  }
 
   .page {
     height: 100vh;
@@ -92,7 +107,7 @@
     /* background-color: #3d5a80; */
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 94vh;
     margin-bottom: 0px;
     padding-bottom: 0px;
@@ -118,10 +133,10 @@
 
   .page1right {
     
-      width: 40%;
-      display: flex;
+      /* width: 40%; */
+      /* display: flex; */
       justify-content: center;
-      align-items: flex-end;
+      /* align-items: flex-end; */
       padding-bottom: 0%;
       margin-bottom: 0%;
       transition:all 3s ease-in-out ;
@@ -143,8 +158,8 @@
       justify-content: center;
       text-align: end;
       padding-right: 10%;
-      background-image: url("gif/giphy.gif");
-      background-size: 50% 50%;
+      background-image: url("gif/giphy3.gif");
+      background-size: contain;
       margin-top: 0;
   }
 
@@ -153,24 +168,41 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
       text-align: justify;
       align-items: start;
       padding-right: 10%;
       padding-left: 50px;
   }
 
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight:bold;
+    text-align: start;
+  }
+
+  .page2right {
+    display: flex;
+    flex-direction: column;
+}
+
   .reseau{
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    padding-top: 30px;
   }
 
   .reseau div{
     display: flex;
     flex-direction: column;
     align-items: center;
+  
+  }
+  .reseau span{
+    font-size: 12px;
   }
 
   .page2right {
@@ -198,7 +230,7 @@
   }
 
   .page3middle {
-    width: 35vw;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -214,10 +246,10 @@
     justify-self: center;
   }
 
-  /* .page3middle h1{
-    grid-column: 1/3;
+  .page3middle h1{
+    grid-column: 2;
     grid-row: 1;
-  } */
+  }
 
   #one{
     grid-column: 1;
@@ -354,7 +386,7 @@
 
   .container {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     place-items: center;
   }
@@ -365,8 +397,8 @@
     height: 40px;
     width: 100px;
     border-radius: 9999px;
-    background-image: url(Img/starwarsToggle.jpg);
-    background-size: cover;
+    background-image: url(Img/togglenuit.jpg);
+    background-size: contain;
     position: relative;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -374,7 +406,7 @@
   }
 
   #checkbox:checked + .toggle {
-    background-image: url(Img/starwarsToggle.jpg);
+    background-image: url(Img/togglejour.jpg);
     background-size: cover;
   }
 
@@ -431,6 +463,8 @@
     scroll-snap-type: y mandatory;
     height: 100vh;
     scroll-behavior: smooth;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   
   .snap {
@@ -464,40 +498,41 @@
 } */
 
 
-/* ///////////////////////////////////////MODE JOUR/NUIT////////////////////////////////// */
+/* ///////////////////////////////////////CLASSES MODE JOUR/NUIT////////////////////////////////// */
 
 
   .changeColorBackground{
-    background-color: black;
+    background-color: #121212;
   }
   .changeStyleTitre{
     background-image: url("gif/lave.gif");
   }
- 
   .backdark {
     display:none;
+    background-size: cover;
   }
   .transition .backdark {
     display: block;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
   }
-  
-  
   .changeOrder-1{
     order : -1;
   }
-
   .changeOrder2{
     order : 2;
   }
+  .changeColor{
+    color: #3d5a80;
+  }
+
 
 /* ///////////////////////////////////////Menu Burger////////////////////////////////// */
 
 nav{
   font-family: 'Poppins', sans-serif;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   /* height: 5vh; */
   /* background-color: #e8d6cb; */
   /* position: fixed; */
@@ -508,7 +543,7 @@ nav{
 
 .nav-menu li{
   color:#3d5a80;
-  background-color: #e8d6cb;
+  /* background-color: #e8d6cb; */
   border-radius: 10px 10px;
   padding: 5px;
   text-decoration: none;
@@ -518,7 +553,7 @@ nav{
 .nav-menu{
   display: flex;
   list-style: none;
-  width: 40%;
+  /* width: 40%; */
   justify-content: space-evenly;
   align-items: center;
 }
@@ -526,7 +561,7 @@ nav{
 a.nav-link {
   /* color: #fff;
   text-decoration: none; */
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   transition: 0.5s;
 }
 
@@ -575,23 +610,22 @@ a.nav-link:hover {
 
 
 
-nav{
+  nav{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     /* height: 5vh; */
     /* background-color: #e8d6cb; */
     /* position: fixed; */
     width: 100%;
     padding-top: 10px;
-    
 }
 
+
 .nav-menu{
-  
     display: flex;
     list-style: none;
-    width: 40%;
+    /* width: 40%; */
     justify-content: space-evenly;
     align-items: center;
 }
@@ -604,10 +638,7 @@ nav{
   text-decoration: none;
   font-weight: bold;
 }
-
 }
-
-
 
 
 /* ///////////////////////////////////////Bouton jour/nuit////////////////////////////////// */
@@ -649,6 +680,12 @@ float: left;
 /********************************************************* SMARTPHONE ***************************************//********************************************************* SMARTPHONE ***************************************//********************************************************* SMARTPHONE ***************************************/
 
 @media screen and (max-width:767px) {
+
+  html{
+    scroll-behavior: smooth;
+    font-size: 7px;
+} 
+
 
 /* menu burger */
   .hamburger {
@@ -693,6 +730,17 @@ float: left;
     transition: 0.2s ease;
   }
 
+  .page2left{
+    display:none;
+  }
+
+  #banner{
+  height: auto;
+  }
+
+  #page2{
+    justify-content: space-evenly;
+  }
 
 
 

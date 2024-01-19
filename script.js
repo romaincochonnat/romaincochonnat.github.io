@@ -7,6 +7,7 @@ let bannertitle= document.getElementsByClassName("banner-title");
 let page1 = document.getElementById("page1")
 let page1right = document.getElementById("page1right");
 let page2right = document.getElementById("page2right");
+let h2 = document.getElementById("h2");
 
 function swapTheme(){
    
@@ -30,6 +31,8 @@ function swapTheme(){
     setTimeout(() => {
         body.classList.toggle("transition");
     }, 1500);
+
+    h2.classList.toggle("changeColor");
 
 
 }
