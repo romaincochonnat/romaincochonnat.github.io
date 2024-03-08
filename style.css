@@ -409,18 +409,8 @@
 
     /* ///////////////////////////////////////Bouton jour/nuit////////////////////////////////// */
 
-
-  /* *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } */
-
   .container {
-    /* height: 100%; */
-    /* width: 100%; */
+
     display: grid;
     place-items: center;
     order: 3;
@@ -600,7 +590,6 @@
   .transition .backdark {
     display: block;
     width: 100vw;
-    /* height: 100vh; */
   }
   .changeOrder-1{
     order : -1;
@@ -698,40 +687,6 @@
   font-weight: bold;
 }
 }
-
-
-/* ///////////////////////////////////////Bouton jour/nuit////////////////////////////////// */
-
-
-
-
-/* ///////////////////////////////////////Texte avec fond////////////////////////////////// */
-
-
-
-/* ///////////////////////////////////////Gestion Scroll automatisée////////////////////////////////// */
-
-
-/* ///////////////////////////////////////CAROUSEL////////////////////////////////// */
-
-
-/* .carousel{
-position: relative;
-overflow: hidden;
-}
-
-.carousel--container::after{
-content: '';
-clear: both;
-display: table;
-}
-
-.carousel__item {
-float: left;
-} */
-
-
-/* ///////////////////////////////////////MODE JOUR/NUIT////////////////////////////////// */
 
 
 
@@ -916,8 +871,6 @@ float: left;
   }
 
   .gridFormation{
-    /* display: flex;
-    align-items: center; */
     border-top: 1px solid black;
     height: 60px;
   }
@@ -1014,30 +967,5 @@ float: left;
     color:#e8d6cb;
   }
 
-
-  /* ///////////////////////////////////////Gestion Scroll automatisée////////////////////////////////// */
-
-
-
-  /* ///////////////////////////////////////CAROUSEL////////////////////////////////// */
-
-
-  /* .carousel{
-  position: relative;
-  overflow: hidden;
-  }
-
-  .carousel--container::after{
-  content: '';
-  clear: both;
-  display: table;
-  }
-
-  .carousel__item {
-  float: left;
-  } */
-
-
-  /* ///////////////////////////////////////MODE JOUR/NUIT////////////////////////////////// */
 
 }
