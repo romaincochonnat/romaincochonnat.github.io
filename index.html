@@ -3,17 +3,22 @@
 
 <head>
     <title>Portfolio Romain Cochonnat</title>
-    <!-- <link rel="icon" href=77777 /> -->
+    <link rel="icon" href=Img/moi3.png />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- <script src="script.js" async></script> -->
 </head>
 
 <body id="body">
-<img src="./gif/darkmode.gif" alt="" class="backdark">
+<img src="gif/darkmode.gif" class="backdark">
+
 <article class="scroll-container">
-    
-    <nav class = snap>
-        <img src="Img/rc logo.jpg" style="width:50px; height:50px; border-radius:10%/10%">
+    <div class="overlay"></div>
+    <nav id="nav" class = snap>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        <img src="Img/rc logo.png" style="width:50px; height:50px; border-radius:10%/10%">
         <div class="container">
             <div class="daynight">
             <label  for="checkbox">
@@ -27,38 +32,35 @@
         </div>
         <div class="navbar">
             <ul class="nav-menu">
-                <li class="nav-item"><a href=#page1 class="nav-link">Accueil</a></li>
-                <li class="nav-item"><a href=#page2 class="nav-link">About Me</a></li>
-                <li class="nav-item"><a href=#page3 class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href=#page4 class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href=#nav id = "nav1" class="nav-link">Accueil</a></li>
+                <li class="nav-item"><a href=#page2 id = "nav2" class="nav-link">A propos</a></li>
+                <li class="nav-item"><a href=#page3 id = "nav3" class="nav-link">Mes compétences</a></li>
+                <li class="nav-item"><a href=#page4 id = "nav4" class="nav-link">Me contacter</a></li>
+                <li class="nav-item" class="nav-link" onclick="changeLanguage('fr')"><img src="Img/FRlangue.png"  style="width:2rem"></a></li>
+                <li class="nav-item" class="nav-link" onclick="changeLanguage('en')"><img src="Img/ENlangue.png"  style="width:2rem"></a></li>
             </ul>
         </div>
 
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
     </nav>
 
     
 
-    <div id="page1" class="page snap">
+    <div id="page1" class="page">
         
 
-        <div class="page1left" id="page1left">
+        <div id="page1left">
             <!-- <h1 class=titre id="accueil">Hi ! I'm Romain</h1> -->
 
-            <div id = banner class="banner">
-                <h1 id = banner-title class="banner-title">Hi I'm <br>Romain</h1>
+            <div id = banner1 class="banner">
+                <h1 id = banner-title1 class="banner-title">Salut<br>Je suis Romain</h1>
             </div>
             
-            <p>Ingénieur de formation<br> 
+            <p id = "texte1">Ingénieur de formation<br> 
             Je souhaite me reconvertir dans le développement informatique</p>
         </div>
 
         <div class="page1right" id="page1right">
-            <img id="moi" src="Img/moi2.png" style="width:auto; height:46rem" >
+            <img id="moi" src="Img/moi2.png">
         </div>
         
         <a href="#page2" class="arrow-container">
@@ -73,35 +75,42 @@
 
 
    <div id="page2" class="page snap">
-        <div class="page2left">
-
-        </div>
-
-        <div class="page2middle">
-            <h2 id="h2">Hello my name is Romain Cochonnat</h2>
-            <p1>Après mon diplôme d'ingénieur orienté Génie Civil je travaille pendant 4 ans en conduite de projet de construction sur des grosses et petites opérations. Attiré par l'innovation et le  numérique depuis toujours je décide ensuite de me former pendant un an en alternance à ces notions mais toujours pour le bâtiment. Après cette année d'alternance je souhaite maintenant passé complétement du côté tech et digital en travaillant en tant que développeur Full Stack.
+        <div id="page2left" class="sousPage">
+            <h2 id="h2">En quelques lignes...</h2>
+            <p1 id = "texte2"><br>&nbsp&nbsp&nbspAprès mon diplôme d'ingénieur orienté Génie Civil je travaille, pendant 4 ans en conduite de projet de construction sur divers types d'opérations. Attiré par l'innovation et le  numérique depuis toujours je décide alors de me former pendant un an supplémentaire dans la transition digitale du bâtiment. <br><br>&nbsp&nbsp&nbsp&nbspCette dernière année m'a permis de découvrir que la partie m'animant le plus était celle du développement. Après avoir construit des tours et bâtiments solides, je désire donc désormais construire des applications et logiciels solides en travaillant en tant que développeur Full Stack. <br><br>
             </p1>
             
             <div class="reseau">
-                <a href="https://www.linkedin.com/in/romain-cochonnat-95b2a1129/" target="_blank"><img src="Img/LinkedIn_icon.svg.png" style="width:3rem; height:3rem"></a>
-                <a href=https://github.com/RomainCochonnat target="_blank"><img src="Img/logo git hub.png" style="width:3rem; height:3rem; border-radius: 20%"></a>
+                <a href="https://www.linkedin.com/in/romain-cochonnat-95b2a1129/" target="_blank"><img src="Img/LinkedIn_icon.svg.png" style="width:2rem; height:2rem"></a>
+                <a href=https://github.com/RomainCochonnat target="_blank"><img src="Img/logo git hub.png" style="width:2rem; height:2rem; border-radius: 15%"></a>
                 <!-- <a href=https://www.facebook.com/romain.cochonnat/ target="_blank"><img src="Img/1664035778meta-icon-png.webp" style="width:50px; height:50px"></a> -->
-                <a href=https://www.instagram.com/romain_cochonnat/ target="_blank"><img src="Img/instagram-couleur.jpg" style="width:3rem; height:3rem"></a>
+                <!-- <a href=https://www.instagram.com/romain_cochonnat/ target="_blank"><img src="Img/instagram-couleur.jpg" style="width:2rem; height:2rem"></a> -->
                 <div>
                     <a href="fichiers pdf/CV Romain COCHONNAT 2023 EN PO+DA.pdf" target="_blank"><img src="Img/PDF_file_icon.svg.png" style="width:auto; height:2rem"></a>
                     <p1>CV EN</p1>
+                </div>
+                <div>
                     <a href="fichiers pdf/CV Romain COCHONNAT 2023 FR PO+DA.pdf" target="_blank"><img src="Img/PDF_file_icon.svg.png" style="width:auto; height:2rem"></a>
                     <p1>CV FR</p1>
                 </div>    
             </div>
         </div>
 
-        <div class="page2right" id="page2right">
+        <!-- <div class="page2middle">
+            
+        </div> -->
+
+        <div id="page2right">
             <!-- <h1 class="titre">About Me</h1> -->
-            <div id = banner class="banner">
-                <h1 id = banner-title class="banner-title">About Me</h1>
+            <div id = banner2 class="banner">
+                <h1 id = banner-title2 class="banner-title">À Propos</h1>
             </div>
-            <img src="gif/codegif.gif" style="width:28rem; border-radius: 30px">
+            <div id="illudév">
+                <img src="gif/codegif2.gif" style="width: 100%; border-radius: 20px; box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;">
+            </div>
+            <div style="width:28rem; height:20rem"> 
+                
+            </div>
         </div>
 
         <a href="#page3" class="arrow-container">
@@ -114,32 +123,43 @@
 
     <div id="page3" class="page snap">
 
-        <div class="page3left" id="page3left">
-            <h1 class = titre >Formations</h1>
-            <!-- <div id = banner class="banner">
-                <h1 id = banner-title class="banner-title">Formations</h1>
-            </div> -->
-            <ul>
-                <li>
-                    <span2><u>Jan 2024: </u></span2><p3> Modul'R (HTML, CSS, JavaScript)</p3>
-                </li>
-                <li>
-                    <span2><u>Déc 2023: </u></span2><p3> Konexio (HTML, CSS, JavaScript)</p3>
-                </li>
-                <li>
-                    <span2><u>2022-2023: </u></span2><p3> Mastère Spécialisé BIM</p3>
-                </li>
-                <li>
-                    <span2><u>2013-2018: </u></span2><p3> INSA Lyon, Genie Civil et Urbanisme</p3>
-                </li>
-            </ul>
+        <div id="page3left" class="sousPage">
+            
+            <img src="Img/graduate.png" style="width:4rem">
+            <h2 id="h2b">Formations</h2>
+           
+            <div id="a" class="gridFormation">
+                <p1><b><u>Bootcamp</u></b><br><span style="color:white">06/2024-08/2024<span></p1>
+            </div>
+            <div id="b" class="gridFormation">
+                <p1><b><u>Konexio + Modul'R</u></b><br><span style="color:white">11/2023-02/2024</span></p1>
+            </div>
+            <div id="c" class="gridFormation">
+                <p1><b><u>Ecole Nationale des Ponts et Chaussés + ESTP</u></b><br><span style="color:white">2022-2023</span></p1>
+            </div>
+            <div id="d" class="gridFormation">
+                <p1><b><u>INSA Lyon</u></b><br><span style="color:white">2013 - 2018</span></p1>
+            </div>
+            <div id="e" class="gridFormation">
+                <p1>Formation intensive de Développeur Web Full Stack</p1>
+            </div>
+            <div id="f" class="gridFormation">
+                <p1>Fomations aux langages HTML, CSS, JavaScript</p1>
+            </div>
+            <div id="g" class="gridFormation">
+                <p1>Mastère Spécialisé : Building Information Modeling, Conception intégrée et cycle de vie du bâtiment et des infrastructures</p1>
+            </div>
+            <div id="h" class="gridFormation">
+                <p1>Ingénieur diplômé de l'INSA de Lyon</p1>
+            </div>
+    
         </div>
 
-        <div class="page3middle">
-            <h1 class="titre">Skills</h1>
-            <!-- <div id = banner class="banner">
-                <h1 id = banner-title class="banner-title">Skills</h1>
-            </div> -->
+        <div id="page3right" class="sousPage">
+            <img src="Img/noun-computer-skill-2958403.png" style="width:7rem">
+            <h2 id="h2c">Compétences</h2>
+            <h2 id="h2c-alternate">Skills</h2>
+
             <div id="one">
                 <span>HTML</span>
                 <br>
@@ -154,6 +174,21 @@
                 <span>JavaScript</span>
                 <br>
                 <img src="Img/javascript.png" style="width:5rem; height:5rem; border-radius:10%/10%" >
+            </div>
+            <div id="four">
+                <span>ReactJS</span>
+                <br>
+                <img src="Img/soon.png" style="width:5rem; height:5rem; border-radius:10%/10%" >
+            </div>
+            <div id="five">
+                <span>NodeJS</span>
+                <br>
+                <img src="Img/soon.png" style="width:5rem; height:5rem; border-radius:10%/10%" >
+            </div>
+            <div id="six">
+                <span>Autres...</span>
+                <br>
+                <img src="Img/soon.png" style="width:5rem; height:5rem; border-radius:10%/10%" >
             </div>
         </div>
 
@@ -170,86 +205,106 @@
 
 
     <div id="page4" class="page snap">
-        <div class="page4left">
-            <h1 class = titre >Hobbies<br>/Projet</h1>
+        <div id="page4left" class="sousPage">
+            <h2 id="h2d" class ="titre">Centres d'intérêts</h2>
 
-            <!-- <div class="carousel">
-                <div class="carousel__panorama">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                </div>
-            </div>
             <div id="carousel1">
 
                 <div class="item">
                     <div class="item__image">
-                        <img src="" alt="">
+                        <img src="Img/illu_sport.jpg" alt="">
                     </div>
-                    <div class="item__body">
+                    <div id="sport" class="item__body">
                         <div class="item__title">
-                            Mont Titre 1
+                            Sports
                         </div>
                         <div class="item__description">
-                            Ici une petite descritpion pour tester le carousel
+                            <ul>
+                                <li>
+                                    <b>Basketball</b> en club, 13 ans, Niveau Régional
+                                </li>
+                                <li>
+                                    <b>Running</b>: Semi-marathon, Marathon
+                                </li>
+                                <li>
+                                    Padel, Tennis, Badminton
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="item__image">
-                        <img src="" alt="">
+                        <img src="Img/illu_voyage.jpg" alt="">
                     </div>
-                    <div class="item__body">
+                    <div id="voyages" class="item__body">
                         <div class="item__title">
-                            Mont Titre 2
+                            Voyages
                         </div>
                         <div class="item__description">
-                            Ici une petite descritpion pour tester le carousel
+                            Voyages itinérants en Europe et en Asie
                         </div>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="item__image">
-                        <img src="" alt="">
+                        <img src="Img/illu-jeuxsociété.jpg" alt="">
                     </div>
-                    <div class="item__body">
+                    <div id ="jeux" class="item__body">
                         <div class="item__title">
-                            Mont Titre 3
+                            Jeux de société
                         </div>
                         <div class="item__description">
-                            Ici une petite descritpion pour tester le carousel
+                            Soirées jeux de société entre amis
                         </div>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="item__image">
-                        <img src="" alt="">
+                        <img src="Img/illu-lecture.jpg" alt="">
                     </div>
-                    <div class="item__body">
+                    <div id ="lecture" class="item__body">
                         <div class="item__title">
-                            Mont Titre 4
+                            Lectures
                         </div>
                         <div class="item__description">
-                            Ici une petite descritpion pour tester le carousel
+                            <ul>
+                                <li>
+                                    <b>Mangas</b>
+                                </li>
+                                <li>
+                                    <b>Lectures pro</b>:
+                                    <br>
+                                    <u>Proprement Codeur</u> (Robert C. MARTIN);
+                                    <u>Les fondements de l'informatique</u> (Hugues.B, Pascal.F, Nicolas.VZ)
+                                </li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="item__image">
-                        <img src="" alt="">
+                        <img src="Img/illu-ordinateur.avif" alt="">
                     </div>
-                    <div class="item__body">
+                    <div id ="projets" class="item__body">
                         <div class="item__title">
-                            Mont Titre 5
+                            Projets de développement
                         </div>
                         <div class="item__description">
-                            Ici une petite descritpion pour tester le carousel
+                            <ul>
+                                <li>
+                                    <b>Portfolio</b>
+                                </li>
+                                <li>
+                                    <b>Sites commande restaurant</b>
+                                </li>
+                            </ul>
+                            <a href=https://github.com/RomainCochonnat ><img src="Img/logo git hub.png" style="width:2rem; height:2rem; border-radius: 15%"></a>
                         </div>
                     </div>
                 </div>
@@ -257,32 +312,38 @@
 
 
             </div>
-
-            <div id="carousel2"></div>
-            <div id="carousel3"></div>
-               -->
         </div>
 
-        <div class="page4right">
-            <h1 class = titre >Contact</h1>
+        <div  id="page4right">
+            <div id = banner3 class="banner">
+                <h1 id = banner-title3 class="banner-title">Contact</h1>
+            </div>
             <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoqkyal" method="post">
                 <fieldset id="fs-frm-inputs">
-                  <label for="full-name">Full Name</label>
-                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label id="nom" for="full-name">Nom Complet</label>
+                  <input type="text" name="name" id="full-name" placeholder="François DUPOND" required="">
                   <br>
                   <br>
-                  <label for="email-address">Email Address</label>
-                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label id="mail" for="email-address">Adresse Email</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="ex:François.dupond@gmail.com" required="">
                   <br>
                   <br>
                   <label for="message">Message</label>
-                  <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                  <textarea rows="5" name="message" id="message" placeholder="Hello..." required=""></textarea>
                   <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                 </fieldset>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Valider">
               </form>
+              <img src="gif/gif skills.gif" style="width: 70%; border-radius: 20px; box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a; margin-top: 1rem;">
         </div>
+
     </div>
+    <div class = "pieddepage">
+        <span style="color:black">romain.cochonnat@gmail.com</span>
+        <span style="color:black">Tel : +33(0) 6 27 99 15 76</span>
+        <span style="color:black">2024 - Romain's portfolio</span>
+    </div>
+    
 </article>
 
     <script src="script.js"></script>
